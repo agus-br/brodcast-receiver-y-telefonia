@@ -6,8 +6,15 @@
         android:name="android.hardware.telephony"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Permiso detectar el recibimiento de llamadas -->
     <uses-permission android:name="android.permission.RECEIVE_CALLS" />
+    <!-- Permiso para leer el estado del teléfono -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Permiso para leer números de teléfono (necesario en Android 10 y superior) -->
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <!-- Permiso para leer el registro de llamadas (necesario en Android 10 y superior) -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <!-- Permiso para enviar SMS -->
     <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
